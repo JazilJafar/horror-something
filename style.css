@@ -1,47 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.acme-regular {
-  font-family: "Acme", sans-serif;
+body {
+    background-image: linear-gradient(180deg, #3b0000 0%, #1a0000 70%, #000000 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div {
+    border: 2px solid black;
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    box-shadow: -10px 14px 12px 12px rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(180deg, #110202 0%, #710707 70%, #300909 100%);
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+}
+#intro img {
+    width: 300px;
+    height: 180px;
+    margin-top: 46px;
+}
+#intro h1 {
+    margin-top: 20px;
+    font-family: "Aldrich";
+    background: linear-gradient(180deg, #a51530 0%, #1a0000 70%, #000000 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.agbalumo-regular {
+  font-family: "Agbalumo", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-body {
-    background: radial-gradient(circle at center, #c01a1a 0%, #000000 100%);
-    color: white;
-}
-#intro {
-    display: flex;
-    justify-content: space-between;
-    width: 600px;
-    margin-top: 200px;
-    margin-left: 340px;
-    height: 100vh;
-}
-#intro img {
-    width: 500px;
-    height: 200px;
-}
-#intro h1 {
-    font-weight: bolder;
-    margin-top: 30px;
-    font-family: "Acme";
-}
-#first {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-}
 #first h3 {
-    font-size: 40px;
-    position: absolute;
-    top: 60%;
-}
-#first img {
-    width: 400px;
-    height: 300px;
+  margin-top: 20px;
 }
