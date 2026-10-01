@@ -1,6 +1,8 @@
 const partstochange = document.querySelectorAll(".story-part");
 const prevbtn = document.getElementById('prevbtn');
 const nexbtn = document.getElementById('nexbtn');
+const hoversounddiv = document.getElementById('second')
+const horrorsoundone = document.getElementById('hover-sound');
 let currentpag = 0;
 function updatepage() {
     partstochange.forEach((part, index) => {
@@ -23,3 +25,7 @@ prevbtn.addEventListener('click', () => {
     }
 });
 updatepage();
+hoversounddiv.addEventListener('mouseenter', ()=>{
+    horrorsoundone.currentTime = 0;
+    horrorsoundone.play();
+})
