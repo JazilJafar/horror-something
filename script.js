@@ -1,7 +1,8 @@
 const partstochange = document.querySelectorAll(".story-part");
 const prevbtn = document.getElementById('prevbtn');
 const nexbtn = document.getElementById('nexbtn');
-const hoversounddiv = document.getElementById('second')
+const hoversounddiv = document.getElementById('second');
+const hoversounddivtw = document.getElementById('five');
 const horrorsoundone = document.getElementById('hover-sound');
 let currentpag = 0;
 function updatepage() {
@@ -26,6 +27,10 @@ prevbtn.addEventListener('click', () => {
 });
 updatepage();
 hoversounddiv.addEventListener('mouseenter', ()=>{
+    horrorsoundone.currentTime = 0;
+    horrorsoundone.play();
+});
+hoversounddivtw.addEventListener('mouseenter', ()=>{
     horrorsoundone.currentTime = 0;
     horrorsoundone.play();
 })
