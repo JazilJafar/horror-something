@@ -44,9 +44,13 @@ if (prevbtn) {
     });
 }
 if (volumeSlider && horrorsoundone) {
-    horrorsoundone.volume = volumeSlider.value; // set initial volume from slider
+    horrorsoundone.volume = parseFloat(volumeSlider.value);
+
     volumeSlider.addEventListener('input', (e) => {
-        horrorsoundone.volume = e.target.value;
+        const val = parseFloat(e.target.value);
+        
+        horrorsoundone.volume = val;
+        horrorsoundone.muted = (val === 0);
     });
 }
 document.addEventListener('click', startAudio, { once: true });

@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
 .aldrich-regular {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: linear-gradient(180deg, #3b0000 0%, #1a0000 70%, #000000 100%);
     background-repeat: no-repeat;
@@ -18,7 +21,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-div {
+
+.story-part {
     border: 2px solid black;
     height: 400px;
     width: 500px;
@@ -32,11 +36,13 @@ div {
     border-radius: 15px;
     overflow: hidden;
 }
+
 #intro img {
     width: 300px;
     height: 180px;
     margin-top: 46px;
 }
+
 #intro h1 {
     margin-top: 20px;
     font-family: "Aldrich";
@@ -44,34 +50,41 @@ div {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 .agbalumo-regular {
   font-family: "Agbalumo", system-ui;
   font-weight: 400;
   font-style: normal;
 }
+
 #first h3 {
   margin-top: 20px;
   font-family: "Agbalumo";
   color: #4a1a1a;
   font-size: 30px;
 }
+
 #first:hover {
     background-image: url(./assets/qw.png);
 }
+
 #second p {
     margin-top: 10px;
     margin-bottom: 10px;
     color: #3b0000;
 }
+
 #second h3 {
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
     color: #710707;
 }
+
 #second img {
     width: 200px;
     margin-top: 50px;
 }
+
 #third h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
@@ -79,87 +92,105 @@ div {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .nosifer-regular {
   font-family: "Nosifer", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 #third img {
     filter: drop-shadow(200px 5px 10px rgba(0, 0, 0, 0.5));
 }
+
 #four h3 {
     margin-top: 30px;
     color: #6e0707;
     font-size: 30px;
     font-family: "Nosifer";
 }
+
 #four:hover{
     background: url(./assets/wrdff.png);
 }
+
 #five img {
     width: 400px;
     border-radius: 30px;
     margin-top: 40px;
 }
+
 #five h3 {
     margin-top: 20px;
     font-size: 20px;
     font-family: 'Courier New';
     color: #6e0707;
 }
+
 #five p {
     margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 #six {
   background-image: url(./assets/qw.png);
 }
+
 #six h3 {
     margin-top: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #641a1a;
 }
+
 #seven img {
     width: 400px;
     border-radius: 40px;
     margin-top: 70px;
     opacity: 60%;
 }
+
 #seven h3 {
     margin-top: 20px;
     color: #a51530;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 #eight img {
     width: 300px;
     margin-top: 40px;
     border-radius: 70px;
 }
+
 #eight h3 {
     margin-top: 20px;
     color: #611f1f;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 #nine img {
   width: 150px;
   opacity: 75%;
   margin-top: 6px;
   border-radius: 50px;
 }
+
 #nine h3 {
     margin-top: 30px;
     font-family: "Nosifer",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     color: #641a1a;
 }
+
 #ten img {
     width: 260px;
     margin-top: 50px;
 }
+
 #ten h3 {
     font-family: "Nosifer";
     color: #4c2424;
 }
+
 #nexbtn {
     background-color: rgb(94, 29, 21);
     position: absolute;
@@ -170,7 +201,9 @@ div {
     border-radius: 10px;
     color: white;
     font-family: "Nosifer";
+    cursor: pointer;
 }
+
 #prevbtn {
     background-color: #3b0000;
     position: absolute;
@@ -181,4 +214,28 @@ div {
     border-radius: 10px;
     color: white;
     font-family: "Nosifer";
+    cursor: pointer;
+}
+.sound-controls {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    width: auto; 
+    height: auto; 
+    background: rgba(0, 0, 0, 0.85);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #710707;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.sound-controls input[type="range"] {
+    cursor: pointer;
+    accent-color: #ff4444;
 }
