@@ -38,15 +38,15 @@ body {
 }
 
 #intro img {
-    width: 300px;
-    height: 180px;
+    width: 270px;
+    height: 260px;
     margin-top: 46px;
 }
 
 #intro h1 {
     margin-top: 20px;
     font-family: "Aldrich";
-    background: linear-gradient(180deg, #a51530 0%, #1a0000 70%, #000000 100%);
+    background: linear-gradient(180deg, #a51530 0%, #8f1f1f 70%, #8b3131 100%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
@@ -88,9 +88,6 @@ body {
 #third h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
-  background: url(./assets/qw.png);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .nosifer-regular {
